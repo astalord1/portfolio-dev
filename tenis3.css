@@ -247,3 +247,128 @@ section .list .active .content .informaçao {
   transform: translateX(0);
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        overflow: auto;
+    }
+
+    header {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+        top: 0;
+    }
+
+    header img {
+        width: 6rem;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        gap: 5px;
+    }
+
+    section {
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    section .list {
+        width: 100%;
+    }
+
+    section .list .item .tenis-img {
+        position: relative;
+        top: 0;
+        transform: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section .list .item .tenis-img img {
+        transform: rotate(0deg);
+    }
+
+    section .list .item .content {
+        position: relative;
+        right: 0;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 3.5em;
+    }
+
+    section .list .item .content .descriçao {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    section .arrows {
+        width: 100%;
+        top: 85%;
+        transform: translate(-50%, 0);
+    }
+
+    section .arrows button {
+        width: 40px;
+        height: 40px;
+    }
+
+    section .arrows button img {
+        width: 22px;
+    }
+
+    section .indicators {
+        top: unset;
+        bottom: 40px;
+        height: auto;
+        width: 100%;
+        gap: 5px;
+    }
+
+    section .indicators .number {
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
+    }
+
+    section .indicators ul li {
+        width: 30px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    header {
+        width: 95vw;
+        grid-template-columns: 1fr 400px;
+        gap: 40px;
+    }
+
+    header nav ul {
+        grid-template-columns: repeat(3, 120px);
+    }
+
+    section .list {
+        width: 90vw;
+    }
+
+    section .list .item .content h2 {
+        font-size: 5em;
+    }
+
+    section .arrows {
+        width: 90vw;
+    }
+}
